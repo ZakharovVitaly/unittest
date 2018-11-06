@@ -1,5 +1,6 @@
 #!/usr/bin/python2
-import unittest, re
+import unittest
+import re
 def exp(a,b):
     try:
         a, b  = int(a), int(b)
@@ -22,4 +23,5 @@ class TestFuncs(unittest.TestCase):
     def test_add_mix(self): self.assertEqual(add('4',5), None)
     def test_rmsp_int(self): self.assertEqual(rmsp(4), '4')
     def test_rmsp_mix(self): self.assertEqual(rmsp('5    .   3'), '5 . 3')
-if __name__ == '__main__': unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
