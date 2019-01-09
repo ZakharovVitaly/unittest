@@ -1,1 +1,1 @@
-Example of using unittest library in Python2
+Example of using unittest library with Python2.
